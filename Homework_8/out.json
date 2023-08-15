@@ -1,0 +1,31 @@
+[
+    {
+        "name": ".1",
+        "extension": ".txt",
+        "type": "file"
+    },
+    {
+        "name": "3.",
+        "extension": ".pdf",
+        "type": "file"
+    },
+    {
+        "name": "task_1",
+        "extension": ".py",
+        "type": "file"
+    },
+    {
+        "name": "two.2.2.2.2.2.2",
+        "extension": ".md",
+        "type": "file"
+    },
+    {
+        "name": "test_dir",
+        "type": "directory"
+    },
+    {
+        "name": "4",
+        "extension": ".txt",
+        "type": "file"
+    }
+]
