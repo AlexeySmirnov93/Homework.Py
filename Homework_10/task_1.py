@@ -11,6 +11,7 @@ class Direct:
     def __init__(self, names: str, result= []):
         self.names = names
         self.result = result
+        
     def this_repository(self):
         for _, dirs, files in os.walk(self.names):
             for name in files:
