@@ -21,6 +21,7 @@ class Triangle:
         self.c = c
 
     def triangle_definition(self):
+            
             try:
                 if (self.a <= 0 or self.b <= 0 or self.c <= 0):
                     raise NegativeLengthError
@@ -39,6 +40,7 @@ class Triangle:
                     return f'Треугольник равносторонний'
                 elif(self.a == self.c or self.c == self.b or self.a == self.b):
                     return f'Треугольник равнобедренный'
+
 
 if __name__ == '__main__':        
     t1 = Triangle(4, 4, 4)
