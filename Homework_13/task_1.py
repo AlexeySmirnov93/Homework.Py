@@ -24,13 +24,11 @@ class Triangle:
             try:
                 if (self.a <= 0 or self.b <= 0 or self.c <= 0):
                     raise NegativeLengthError
-            
                 elif(self.a > self.b + self.c or self.b > self.c + self.a or self.c > self.a + self.b):
                     raise CreationError
 
             except  NegativeLengthError:
                 print(f'Нельзя создавать прямоугольник со сторонами: {self.a}, {self.b}, {self.c} отрицательной длины.')
-
             except CreationError:
                 print(f'Треугольник со сторонами: {self.a}, {self.b}, {self.c} не существует.')
 
