@@ -10,21 +10,17 @@ class TestFuncFib(unittest.TestCase):
         self.assertEqual(list(fib(5)), RESULT)
 
     def test_type_float(self):
-        with self.assertRaises(TypeError):
-            list(fib(5.1))
+        self.assertRaises(TypeError, "'float' object cannot be interpreted as an integer", fib, 5.1 )
 
     def test_type_str(self):
-        with self.assertRaises(TypeError):
-            list(fib('s'))
+        self.assertRaises(TypeError, "'<' not supported between instances of 'str' and 'int'", fib, 's') 
 
     def test_valie_negative_number(self):
-        with self.assertRaises(ValueError):
-            list(fib(-5))
-
+        self.assertRaises(ValueError, "The number n must be greater than 2", fib, -5)
+        
     def test_valie_border_number(self):
-        with self.assertRaises(ValueError):
-            list(fib(1))
-
+        self.assertRaises(ValueError, "The number n must be greater than 2", fib, 1)
+        
 
 if __name__ == "__main__":
     unittest.main(verbosity=10)
