@@ -2,9 +2,12 @@ import unittest
 
 from func_fib import fib
 
+
+RESULT = [0, 1, 1, 2, 3]
+
 class TestFuncFib(unittest.TestCase):
     def test_expected_result(self):
-        self.assertEqual(list(fib(5)), [0, 1, 1, 2, 3])
+        self.assertEqual(list(fib(5)), RESULT)
 
     def test_type_float(self):
         with self.assertRaises(TypeError):
